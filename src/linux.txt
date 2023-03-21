@@ -1,0 +1,42 @@
+1.
+svetalex@svetalex-VirtualBox:~$ mkdir Toys_for_schoolboy
+svetalex@svetalex-VirtualBox:~$ mkdir Toys_for_preschooler
+svetalex@svetalex-VirtualBox:~$ ls
+ 1                    hw1           scripts       Toys_for_preschooler   Загрузки        Шаблоны
+ date                 index.html    shared        Toys_for_schoolboy     Изображения
+ debian               ip.rules      snap          wordpress              Музыка
+ docker-compose.yml   nginx-conf    test3         Видео                  Общедоступные
+ hello-world          Remove_file   test_ln_dir   Документы             'Рабочий стол'
+svetalex@svetalex-VirtualBox:~/Toys_for_schoolboy$ cat > Robots
+svetalex@svetalex-VirtualBox:~/Toys_for_schoolboy$ ls
+Robots
+svetalex@svetalex-VirtualBox:~/Toys_for_schoolboy$ cat > Designer
+svetalex@svetalex-VirtualBox:~/Toys_for_schoolboy$ cat > Table_games
+svetalex@svetalex-VirtualBox:~/Toys_for_schoolboy$ cd
+svetalex@svetalex-VirtualBox:~$ cd Toys_for_preschooler/
+svetalex@svetalex-VirtualBox:~/Toys_for_preschooler$ cat > Soft_toys
+svetalex@svetalex-VirtualBox:~/Toys_for_preschooler$ cat > Dolls
+svetalex@svetalex-VirtualBox:~/Toys_for_preschooler$ cat > Cars
+svetalex@svetalex-VirtualBox:~/Toys_for_preschooler$ ls
+Cars  Dolls  Soft_toys
+svetalex@svetalex-VirtualBox:~$ mkdir Name_toys && cp -R Toys_for_preschooler/. Toys_for_schoolboy/. ~/Name_toys
+svetalex@svetalex-VirtualBox:~$ cd Name_toys/
+svetalex@svetalex-VirtualBox:~/Name_toys$ ls
+Cars  Designer  Dolls  Robots  Soft_toys  Table_games
+svetalex@svetalex-VirtualBox:~/Name_toys$
+svetalex@svetalex-VirtualBox:~$ rm -rf Toys_for_schoolboy
+svetalex@svetalex-VirtualBox:~$ rm -rf Toys_for_preschooler
+svetalex@svetalex-VirtualBox:~$ cd Toys/
+svetalex@svetalex-VirtualBox:~/Toys$ ls
+Cars  Designer  Dolls  Robots  Soft_toys  Table_games
+svetalex@svetalex-VirtualBox:~/Toys$
+
+2.
+svetalex@svetalex-VirtualBox:~$ sudo apt install snapd
+svetalex@svetalex-VirtualBox:~$ snap find chromium
+svetalex@svetalex-VirtualBox:~$ sudo snap install chromium
+chromium 111.0.5563.64 от Canonical✓ установлен
+svetalex@svetalex-VirtualBox:~$ snap connections chromium
+svetalex@svetalex-VirtualBox:~$ sudo snap remove chromium
+svetalex@svetalex-VirtualBox:~$ crontab -e
+*/3 * * * * echo "Hi" >> /home/svetalex/hi.txt
